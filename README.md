@@ -1,1 +1,0 @@
-# astrology-api
