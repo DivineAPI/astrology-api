@@ -12,6 +12,8 @@ Start your FREE Trial to get your API KEY,  `https://divineapi.com <https://divi
    :width: 898px
    :alt: divineapi logo
    :align: center
+   
+   
 
 What is Astrology API?
 ==============
@@ -31,6 +33,8 @@ Astrology API designed by the professional team of Divine API is a must have in 
 or app providing astrology services. It retrieves data related to horoscopes of all zodiac signs
 and calculates the future predictions using astrology algorithms given by professional
 astrologers.
+
+
 
 Features
 ==========
@@ -236,7 +240,7 @@ Credits
 
 "DivineAPI" was created by `Azhar <https://azhar-spiderdev.github.io/>`_
 
-Source of horoscope updates - http://divineapi.com/horoscope-api/
+Source of updates - http://divineapi.com/horoscope-api/
 
 Please feel free to use and adapt this awesome API.
 
