@@ -244,8 +244,6 @@ Questions? Suggestions? Feel free to contact me at admin@divineapi.com
 Credits
 =======
 
-"DivineAPI" was created by `Azhar <https://azhar-spiderdev.github.io/>`_
-
 Source of updates - http://divineapi.com/horoscope-api/
 
 Please feel free to use and adapt this awesome API.
