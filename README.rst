@@ -218,6 +218,12 @@ ECMAScript (ES6)
     });
 
 
+Services
+========
+|Horoscope| |Daily Tarot| |Yes No Tarot| |Fortune Cookie| |Coffee Cup|
+
+
+
 License
 =======
 
@@ -245,21 +251,32 @@ Source of updates - http://divineapi.com/horoscope-api/
 Please feel free to use and adapt this awesome API.
 
     
-.. |Docs| image:: https://readthedocs.org/projects/aztro/badge/?version=latest
-    :target: https://azhar-spiderdev.github.io/
+.. |Travis| image:: https://img.shields.io/badge/7%20Days%20Free%20trial-%23039BE5.svg?&style=for-the-badge&logoColor=white
+    :target: https://divineapi.com/register
+
+.. |SayThanks| image:: https://img.shields.io/badge/API%20Documentation-FCC624?style=for-the-badge&logoColor=white
+    :target: https://divineapi.com/api-doc
+
+.. |Paypal| image:: https://img.shields.io/badge/Other%20Services-%2311AB00.svg?&style=for-the-badge&logoColor=white
+    :target: `Services`_
     
-.. |Maintenance yes| image:: https://img.shields.io/badge/Maintained%3F-yes-green.svg
-   :target: https://azhar-spiderdev.github.io/
+.. |Horoscope| image:: https://img.shields.io/badge/Daily%20Horoscope-cb22e6?style=for-the-badge&logoColor=white
+    :target: https://github.com/divineapi/horoscope-api
 
 
-.. |Travis| image:: https://travis-ci.org/sameerkumar18/aztro.svg?branch=master
-    :target: https://azhar-spiderdev.github.io/
+.. |Daily Tarot| image:: https://img.shields.io/badge/Daily%20Tarot-cb22e6?style=for-the-badge&logoColor=white
+    :target: https://github.com/divineapi/daily-tarot
+    
+    
+.. |Yes No Tarot| image:: https://img.shields.io/badge/Yes%20Or%20No%20Tarot-cb22e6?style=for-the-badge&logoColor=white
+    :target: https://github.com/divineapi/yes-or-no-tarot
+    
+.. |Fortune Cookie| image:: https://img.shields.io/badge/Fortune%20Cookie-cb22e6?style=for-the-badge&logoColor=white
+    :target: https://github.com/divineapi/fortune-cookie
+    
+.. |Coffee Cup| image:: https://img.shields.io/badge/Coffee%20Cup-cb22e6?style=for-the-badge&logoColor=white
+    :target: https://github.com/divineapi/coffee-cup-reading
 
-.. |SayThanks| image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
-    :target: https://azhar-spiderdev.github.io/
-
-.. |Paypal| image:: https://img.shields.io/badge/Paypal-Donate-blue.svg
-    :target: https://azhar-spiderdev.github.io/
 
 .. Indices and tables
 .. ==================
