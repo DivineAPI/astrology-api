@@ -251,6 +251,13 @@ Source of updates - http://divineapi.com/horoscope-api/
 Please feel free to use and adapt this awesome API.
 
     
+.. |Docs| image:: https://img.shields.io/badge/Test%20API-F96854?style=for-the-badge&logoColor=white
+    :target: https://rapidapi.com/divineapi/api/daily-horoscope3
+    
+.. |Maintenance yes| image:: https://img.shields.io/badge/Get%20Your%20API%20Key-cb22e6?style=for-the-badge&logoColor=white
+   :target: https://divineapi.com/register
+
+
 .. |Travis| image:: https://img.shields.io/badge/7%20Days%20Free%20trial-%23039BE5.svg?&style=for-the-badge&logoColor=white
     :target: https://divineapi.com/register
 
