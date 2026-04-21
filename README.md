@@ -23,11 +23,11 @@ Built for developers who need a **production-grade astrology api** without maint
 ## Why choose DivineAPI's Astrology API?
 
 - **200+ REST endpoints** covering Vedic astrology, Western astrology, KP system, Jaimini, numerology, tarot, matching, and PDF reports
-- **Global coverage**, any city, any latitude/longitude, any timezone
-- **25-language output**, English, Hindi, Spanish, French, Arabic, Chinese, and more
-- **No SDK lock-in**, plain JSON over HTTPS, works with every language
-- **Live status page**, 99.9% uptime monitored at [status.divineapi.com](https://status.divineapi.com)
-- **Postman collection** included, import and run in seconds
+- **Global coverage**: any city, any latitude/longitude, any timezone
+- **25-language output**: English, Hindi, Spanish, French, Arabic, Chinese, and more
+- **No SDK lock-in**: plain JSON over HTTPS, works with every language
+- **Live status page**: 99.9% uptime monitored at [status.divineapi.com](https://status.divineapi.com)
+- **Postman collection** included: import and run in seconds
 
 ## Features
 
@@ -58,7 +58,7 @@ Full reference, request/response samples, and live "try-it" console → **[devel
 ## Quick start
 
 1. **Get your API key** → [divineapi.com/register](https://divineapi.com/register) (14-day free trial, no credit card)
-2. **Make your first call**, see the flagship endpoint below
+2. **Make your first call** - see the flagship endpoint below
 3. **Browse the full catalog** → [developers.divineapi.com](https://developers.divineapi.com)
 
 ---
