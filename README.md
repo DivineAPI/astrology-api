@@ -5,7 +5,7 @@
 [![Get API Key](https://img.shields.io/badge/Get%20API%20Key-cb22e6?style=for-the-badge&logoColor=white)](https://divineapi.com/register)
 [![Live Docs](https://img.shields.io/badge/Live%20Docs-4F46E5?style=for-the-badge&logoColor=white)](https://developers.divineapi.com)
 [![API Status](https://img.shields.io/badge/API%20Status-10b981?style=for-the-badge&logoColor=white)](https://status.divineapi.com)
-[![7-Day Free Trial](https://img.shields.io/badge/7--Day%20Free%20Trial-039BE5?style=for-the-badge&logoColor=white)](https://divineapi.com/register)
+[![14-Day Free Trial](https://img.shields.io/badge/14--Day%20Free%20Trial-039BE5?style=for-the-badge&logoColor=white)](https://divineapi.com/register)
 [![Postman](https://img.shields.io/badge/Run%20in%20Postman-FF6C37?style=for-the-badge&logoColor=white)](https://documenter.getpostman.com/view/26759678/2sBXitCnDX)
 
 <p align="center">
@@ -57,7 +57,7 @@ Full reference, request/response samples, and live "try-it" console → **[devel
 
 ## Quick start
 
-1. **Get your API key** → [divineapi.com/register](https://divineapi.com/register) (7-day free trial, no credit card)
+1. **Get your API key** → [divineapi.com/register](https://divineapi.com/register) (14-day free trial, no credit card)
 2. **Make your first call** — see the flagship endpoint below
 3. **Browse the full catalog** → [developers.divineapi.com](https://developers.divineapi.com)
 
