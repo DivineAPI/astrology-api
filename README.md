@@ -1,6 +1,6 @@
-# Astrology API — DivineAPI
+# Astrology API, DivineAPI
 
-> The most comprehensive **Astrology API** for developers — 200+ REST endpoints covering Vedic astrology, Western astrology, horoscopes, kundli, tarot and numerology. One API key, global coverage, 25 languages.
+> The most comprehensive **Astrology API** for developers, 200+ REST endpoints covering Vedic astrology, Western astrology, horoscopes, kundli, tarot and numerology. One API key, global coverage, 25 languages.
 
 [![Get API Key](https://img.shields.io/badge/Get%20API%20Key-cb22e6?style=for-the-badge&logoColor=white)](https://divineapi.com/register)
 [![Live Docs](https://img.shields.io/badge/Live%20Docs-4F46E5?style=for-the-badge&logoColor=white)](https://developers.divineapi.com)
@@ -9,25 +9,25 @@
 [![Postman](https://img.shields.io/badge/Run%20in%20Postman-FF6C37?style=for-the-badge&logoColor=white)](https://documenter.getpostman.com/view/26759678/2sBXitCnDX)
 
 <p align="center">
-  <img src="https://developers.divineapi.com/public/assets/web/images/divineIcon.svg" alt="DivineAPI — Astrology API for developers" width="120" />
+  <img src="https://developers.divineapi.com/public/assets/web/images/divineIcon.svg" alt="DivineAPI, Astrology API for developers" width="120" />
 </p>
 
 ---
 
 ## What is the Astrology API?
 
-The **Astrology API** by DivineAPI lets developers integrate astrology, horoscope, tarot and numerology features into any web or mobile application through a simple REST interface. One API key unlocks **200+ endpoints** spanning Vedic, Western, KP and Jaimini systems — with global city/lat-long support and 25-language output.
+The **Astrology API** by DivineAPI lets developers integrate astrology, horoscope, tarot and numerology features into any web or mobile application through a simple REST interface. One API key unlocks **200+ endpoints** spanning Vedic, Western, KP and Jaimini systems, with global city/lat-long support and 25-language output.
 
 Built for developers who need a **production-grade astrology api** without maintaining ephemeris tables, astronomical libraries, or translation pipelines themselves.
 
 ## Why choose DivineAPI's Astrology API?
 
 - **200+ REST endpoints** covering Vedic astrology, Western astrology, KP system, Jaimini, numerology, tarot, matching, and PDF reports
-- **Global coverage** — any city, any latitude/longitude, any timezone
-- **25-language output** — English, Hindi, Spanish, French, Arabic, Chinese, and more
-- **No SDK lock-in** — plain JSON over HTTPS, works with every language
-- **Live status page** — 99.9% uptime monitored at [status.divineapi.com](https://status.divineapi.com)
-- **Postman collection** included — import and run in seconds
+- **Global coverage**, any city, any latitude/longitude, any timezone
+- **25-language output**, English, Hindi, Spanish, French, Arabic, Chinese, and more
+- **No SDK lock-in**, plain JSON over HTTPS, works with every language
+- **Live status page**, 99.9% uptime monitored at [status.divineapi.com](https://status.divineapi.com)
+- **Postman collection** included, import and run in seconds
 
 ## Features
 
@@ -58,7 +58,7 @@ Full reference, request/response samples, and live "try-it" console → **[devel
 ## Quick start
 
 1. **Get your API key** → [divineapi.com/register](https://divineapi.com/register) (14-day free trial, no credit card)
-2. **Make your first call** — see the flagship endpoint below
+2. **Make your first call**, see the flagship endpoint below
 3. **Browse the full catalog** → [developers.divineapi.com](https://developers.divineapi.com)
 
 ---
@@ -88,8 +88,8 @@ Authenticate with a Bearer token in the `Authorization` header **and** pass `api
 | `lat` | float | ✓ | Latitude | `28.7041` |
 | `lon` | float | ✓ | Longitude | `77.1025` |
 | `tzone` | float | ✓ | Timezone offset from UTC | `5.5` |
-| `lan` | string | — | Language code (default `en`) | `en` |
-| `node_type` | string | — | `truenode` or `meannode` (default) | `meannode` |
+| `lan` | string |, | Language code (default `en`) | `en` |
+| `node_type` | string |, | `truenode` or `meannode` (default) | `meannode` |
 
 Full docs → **[developers.divineapi.com/indian-astrology-api/planetary-positions-kundli](https://developers.divineapi.com/indian-astrology-api/planetary-positions-kundli)**
 
@@ -129,7 +129,7 @@ Full docs → **[developers.divineapi.com/indian-astrology-api/planetary-positio
       }
       // ... Moon, Mercury, Venus, Mars, Jupiter, Saturn, Rahu, Ketu (same shape)
     ],
-    "ascendant": { "/* ascendant details — sign, degree, nakshatra, etc. */": "" }
+    "ascendant": { "/* ascendant details, sign, degree, nakshatra, etc. */": "" }
   }
 }
 ```
@@ -221,7 +221,7 @@ console.log(data);
 ### Node.js (fetch, Node 18+)
 
 ```javascript
-// Node.js 18+ ships with fetch built-in — no dependencies needed.
+// Node.js 18+ ships with fetch built-in, no dependencies needed.
 
 async function getPlanetaryPositions() {
   const url = "https://astroapi-3.divineapi.com/indian-api/v2/planetary-positions";
@@ -358,7 +358,7 @@ func main() {
 
 ## License & Usage
 
-Code samples on this page are free to copy into your own projects — no attribution required. Marketing copy, logos, and the **DivineAPI** name are © 2026 DivineAPI, all rights reserved.
+Code samples on this page are free to copy into your own projects, no attribution required. Marketing copy, logos, and the **DivineAPI** name are © 2026 DivineAPI, all rights reserved.
 
 For the terms that govern the API service itself, see [divineapi.com/terms](https://divineapi.com/terms).
 
