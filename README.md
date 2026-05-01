@@ -45,11 +45,11 @@ Built for developers who need a **production-grade astrology api** without maint
 | Category | Endpoints | Docs |
 |---|---|---|
 | Horoscope & Tarot API | 29 endpoints | [/horoscope-and-tarot-api](https://developers.divineapi.com/horoscope-and-tarot-api) |
-| Indian (Vedic) Astrology API | 60+ endpoints | [/indian-astrology-api](https://developers.divineapi.com/indian-astrology-api) |
-| Western Astrology API | 50+ endpoints | [/western-astrology-api](https://developers.divineapi.com/western-astrology-api) |
-| Numerology API | 25 endpoints | [/numerology-api](https://developers.divineapi.com/numerology-api) |
-| Match-making & Compatibility | 15+ endpoints | [/indian-astrology-api](https://developers.divineapi.com/indian-astrology-api) |
-| PDF Reports | 15 endpoints | [/pdf-reports](https://developers.divineapi.com/pdf-reports) |
+| Indian (Vedic) Astrology API | 60+ endpoints | [/indian-astrology-api](https://developers.divineapi.com/indian-api) |
+| Western Astrology API | 50+ endpoints | [/western-astrology-api](https://developers.divineapi.com/western-api) |
+| Numerology API | 25 endpoints | [/numerology-api](https://developers.divineapi.com/numerology-apis) |
+| Match-making & Compatibility | 15+ endpoints | [/indian-astrology-api](https://developers.divineapi.com/indian-api) |
+| PDF Reports | 15 endpoints | [/pdf-reports](https://developers.divineapi.com/pdf-report-api) |
 
 Full reference, request/response samples, and live "try-it" console → **[developers.divineapi.com](https://developers.divineapi.com)**
 
@@ -91,7 +91,7 @@ Authenticate with a Bearer token in the `Authorization` header **and** pass `api
 | `lan` | string |, | Language code (default `en`) | `en` |
 | `node_type` | string |, | `truenode` or `meannode` (default) | `meannode` |
 
-Full docs → **[developers.divineapi.com/indian-astrology-api/planetary-positions-kundli](https://developers.divineapi.com/indian-astrology-api/planetary-positions-kundli)**
+Full docs → **[developers.divineapi.com/indian-astrology-api/planetary-positions-kundli](https://developers.divineapi.com/indian-api/kundli-api/planetary-positions)**
 
 ### Sample response
 
@@ -360,7 +360,7 @@ func main() {
 
 Code samples on this page are free to copy into your own projects, no attribution required. Marketing copy, logos, and the **DivineAPI** name are © 2026 DivineAPI, all rights reserved.
 
-For the terms that govern the API service itself, see [divineapi.com/terms](https://divineapi.com/terms).
+For the terms that govern the API service itself, see [divineapi.com/terms](https://divineapi.com/terms-service).
 
 ## Contact
 
