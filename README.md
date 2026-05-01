@@ -1,6 +1,6 @@
 # Astrology API, DivineAPI
 
-> The most comprehensive **Astrology API** for developers, 200+ REST endpoints covering Vedic astrology, Western astrology, horoscopes, kundli, tarot and numerology. One API key, global coverage, 25 languages.
+> The most comprehensive **Astrology API** for developers, 300+ REST endpoints covering Vedic astrology, Western astrology, horoscopes, kundli, tarot and numerology. One API key, global coverage, 25 languages.
 
 [![Get API Key](https://img.shields.io/badge/Get%20API%20Key-cb22e6?style=for-the-badge&logoColor=white)](https://divineapi.com/register)
 [![Live Docs](https://img.shields.io/badge/Live%20Docs-4F46E5?style=for-the-badge&logoColor=white)](https://developers.divineapi.com)
@@ -16,13 +16,13 @@
 
 ## What is the Astrology API?
 
-The **Astrology API** by DivineAPI lets developers integrate astrology, horoscope, tarot and numerology features into any web or mobile application through a simple REST interface. One API key unlocks **200+ endpoints** spanning Vedic, Western, KP and Jaimini systems, with global city/lat-long support and 25-language output.
+The **Astrology API** by DivineAPI lets developers integrate astrology, horoscope, tarot and numerology features into any web or mobile application through a simple REST interface. One API key unlocks **300+ endpoints** spanning Vedic, Western, KP and Jaimini systems, with global city/lat-long support and 25-language output.
 
 Built for developers who need a **production-grade astrology api** without maintaining ephemeris tables, astronomical libraries, or translation pipelines themselves.
 
 ## Why choose DivineAPI's Astrology API?
 
-- **200+ REST endpoints** covering Vedic astrology, Western astrology, KP system, Jaimini, numerology, tarot, matching, and PDF reports
+- **300+ REST endpoints** covering Vedic astrology, Western astrology, KP system, Jaimini, numerology, tarot, matching, and PDF reports
 - **Global coverage**: any city, any latitude/longitude, any timezone
 - **25-language output**: English, Hindi, Spanish, French, Arabic, Chinese, and more
 - **No SDK lock-in**: plain JSON over HTTPS, works with every language
