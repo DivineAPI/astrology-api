@@ -1,162 +1,49 @@
-# Astrology API, DivineAPI
+# Astrology API by DivineAPI
 
-> The most comprehensive **Astrology API** for developers, 300+ REST endpoints covering Vedic astrology, Western astrology, horoscopes, kundli, tarot and numerology. One API key, global coverage, 25 languages.
+![Astrology API by DivineAPI](.github/social-preview.png)
 
-[![Get API Key](https://img.shields.io/badge/Get%20API%20Key-cb22e6?style=for-the-badge&logoColor=white)](https://divineapi.com/register)
-[![Live Docs](https://img.shields.io/badge/Live%20Docs-4F46E5?style=for-the-badge&logoColor=white)](https://developers.divineapi.com)
-[![API Status](https://img.shields.io/badge/API%20Status-10b981?style=for-the-badge&logoColor=white)](https://status.divineapi.com)
-[![14-Day Free Trial](https://img.shields.io/badge/14--Day%20Free%20Trial-039BE5?style=for-the-badge&logoColor=white)](https://divineapi.com/register)
-[![Postman](https://img.shields.io/badge/Run%20in%20Postman-FF6C37?style=for-the-badge&logoColor=white)](https://documenter.getpostman.com/view/26759678/2sBXitCnDX)
+**Astrology API that returns Vedic (kundli, panchang), Western (natal chart), horoscope, tarot and numerology data as JSON. 300+ endpoints, 125+ white-label PDF report types and hosted MCP servers, for developers building astrology apps, sites and AI assistants.**
 
-<p align="center">
-  <img src="https://developers.divineapi.com/public/assets/web/images/divineIcon.svg" alt="DivineAPI, Astrology API for developers" width="120" />
-</p>
+[![Docs](https://img.shields.io/badge/Docs-developers.divineapi.com-4F46E5)](https://developers.divineapi.com)
+[![Trial](https://img.shields.io/badge/14--day%20free%20trial-start-039BE5)](https://divineapi.com/start-trial)
+[![Postman](https://img.shields.io/badge/Postman-collection-FF6C37)](https://documenter.getpostman.com/view/26759678/2sBYAysU8Y)
+[![Status](https://img.shields.io/badge/Status-status.divineapi.com-10B981)](https://status.divineapi.com)
+[![MCP](https://img.shields.io/badge/MCP-hosted%20servers-6B7280)](https://divineapi.com/mcp)
 
----
+Verified live against the DivineAPI API on 2 October 2026.
 
-## What is the Astrology API?
+This repo is the hub for DivineAPI on GitHub: what the platform covers, one quickstart per language, and which repo to open next.
 
-The **Astrology API** by DivineAPI lets developers integrate astrology, horoscope, tarot and numerology features into any web or mobile application through a simple REST interface. One API key unlocks **300+ endpoints** spanning Vedic, Western, KP and Jaimini systems, with global city/lat-long support and 25-language output.
+## What the API covers
 
-Built for developers who need a **production-grade astrology api** without maintaining ephemeris tables, astronomical libraries, or translation pipelines themselves.
+300+ endpoints across 8 domains. Calculations use Swiss Ephemeris under a commercial licence; Vedic endpoints are sidereal (Lahiri ayanamsa, fixed), Western endpoints are tropical.
 
-## Why choose DivineAPI's Astrology API?
+| Domain | Size | Examples | Languages | Docs |
+|---|---|---|---|---|
+| Vedic (Indian) astrology | 140+ endpoints | Kundli, planetary positions, divisional charts, dashas, doshas, yogas, matching, Lal Kitab, panchang, festivals | 8 Indian languages | [Indian API](https://developers.divineapi.com/indian-api) |
+| Western astrology | 60+ endpoints | Planetary positions, house cusps, aspects, natal wheel chart, synastry, transits | 12 languages (text reports) | [Western API](https://developers.divineapi.com/western-api) |
+| Horoscope and tarot | 40+ endpoints | Daily, weekly, monthly and yearly horoscopes, daily tarot, yes or no tarot | 25 languages (translator host) | [Horoscope and Tarot API](https://developers.divineapi.com/horoscope-and-tarot-api) |
+| Numerology | 15+ endpoints | Core numbers, Lo Shu grid, name number, mobile number analysis | English only | [Numerology API](https://developers.divineapi.com/numerology-apis) |
+| PDF reports | 125+ white-label report types | Kundli, matching, natal, numerology reports with your logo and company details | See docs | [PDF Report API](https://developers.divineapi.com/pdf-report-api) · [samples](https://reports.divineapi.com/reports) |
 
-- **300+ REST endpoints** covering Vedic astrology, Western astrology, KP system, Jaimini, numerology, tarot, matching, and PDF reports
-- **Global coverage**: any city, any latitude/longitude, any timezone
-- **25-language output**: English, Hindi, Spanish, French, Arabic, Chinese, and more
-- **No SDK lock-in**: plain JSON over HTTPS, works with every language
-- **Live status page**: 99.9% uptime monitored at [status.divineapi.com](https://status.divineapi.com)
-- **Postman collection** included: import and run in seconds
+## Quickstart (60 seconds)
 
-## Features
+**1. Get credentials.** [Start the 14-day free trial](https://divineapi.com/start-trial) (credit card required to activate the trial), then copy your **API key** and **auth token** from the dashboard.
 
-- Daily, weekly, monthly and yearly horoscopes for all 12 zodiac signs
-- Kundli generation and full birth-chart analysis
-- Planetary positions, transits and retrograde tracking
-- Match-making (Ashtakoot, Manglik, Dashakoot, composite friendship)
-- Tarot, numerology, palmistry and Chinese astrology
-- Panchang, festivals, auspicious timings (muhurat) and choghadiya
-- PDF report generation (Kundali, Match-making, Natal, Vedic 5/10/15-year)
-- Synastry, transits, progressions and lunar events
+**2. Make a call.** Every endpoint is a `POST` with a `multipart/form-data` body. Send the auth token as a Bearer header and the API key as the `api_key` form field. The example below returns Vedic basic details (moon sign, nakshatra, tithi and more) for a birth date, time and place.
 
-## API categories
+Runnable files: [`examples/`](examples) (curl, Python, Node.js, PHP).
 
-| Category | Endpoints | Docs |
-|---|---|---|
-| Horoscope & Tarot API | 29 endpoints | [/horoscope-and-tarot-api](https://developers.divineapi.com/horoscope-and-tarot-api) |
-| Indian (Vedic) Astrology API | 60+ endpoints | [/indian-astrology-api](https://developers.divineapi.com/indian-api) |
-| Western Astrology API | 50+ endpoints | [/western-astrology-api](https://developers.divineapi.com/western-api) |
-| Numerology API | 25 endpoints | [/numerology-api](https://developers.divineapi.com/numerology-apis) |
-| Match-making & Compatibility | 15+ endpoints | [/indian-astrology-api](https://developers.divineapi.com/indian-api) |
-| PDF Reports | 15 endpoints | [/pdf-reports](https://developers.divineapi.com/pdf-report-api) |
-
-Full reference, request/response samples, and live "try-it" console → **[developers.divineapi.com](https://developers.divineapi.com)**
-
----
-
-## Quick start
-
-1. **Get your API key** → [divineapi.com/register](https://divineapi.com/register) (14-day free trial, no credit card)
-2. **Make your first call** - see the flagship endpoint below
-3. **Browse the full catalog** → [developers.divineapi.com](https://developers.divineapi.com)
-
----
-
-## Flagship endpoint: Planetary Positions
-
-```http
-POST https://astroapi-3.divineapi.com/indian-api/v2/planetary-positions
-```
-
-Authenticate with a Bearer token in the `Authorization` header **and** pass `api_key` in the request body (both required).
-
-### Request body
-
-| Parameter | Type | Required | Description | Example |
-|---|---|:---:|---|---|
-| `api_key` | string | ✓ | Your DivineAPI key | `YOUR_API_KEY` |
-| `full_name` | string | ✓ | Person's full name | `Rahul Kumar` |
-| `day` | integer | ✓ | Date of birth (day) | `24` |
-| `month` | integer | ✓ | Month of birth | `5` |
-| `year` | integer | ✓ | Year of birth | `2023` |
-| `hour` | integer | ✓ | Birth hour (24-h clock) | `14` |
-| `min` | integer | ✓ | Birth minute | `40` |
-| `sec` | integer | ✓ | Birth second | `43` |
-| `gender` | string | ✓ | Gender | `male` |
-| `place` | string | ✓ | Place of birth | `New Delhi` |
-| `lat` | float | ✓ | Latitude | `28.7041` |
-| `lon` | float | ✓ | Longitude | `77.1025` |
-| `tzone` | float | ✓ | Timezone offset from UTC | `5.5` |
-| `lan` | string |, | Language code (default `en`) | `en` |
-| `node_type` | string |, | `truenode` or `meannode` (default) | `meannode` |
-
-Full docs → **[developers.divineapi.com/indian-astrology-api/planetary-positions-kundli](https://developers.divineapi.com/indian-api/kundli-api/planetary-positions)**
-
-### Sample response
-
-```json
-{
-  "success": 1,
-  "data": {
-    "date": "2025-07-23",
-    "time": "03:45:00",
-    "latitude": "43.083714",
-    "longitude": "-79.065147",
-    "timezone": "-4",
-    "planets": [
-      {
-        "name": "Sun",
-        "full_degree": "96.5115748",
-        "speed": "0.9552920",
-        "is_retro": "false",
-        "is_combusted": "false",
-        "longitude": "6:30:41",
-        "sign": "Cancer",
-        "sign_no": 4,
-        "rashi_lord": "Moon",
-        "nakshatra": "Pushya",
-        "nakshatra_pada": 1,
-        "nakshatra_no": 8,
-        "nakshatra_lord": "Saturn",
-        "sub_lord": "Mercury",
-        "awastha": "Vriddha",
-        "karakamsha": "Dara",
-        "house": 2,
-        "type": "malefic",
-        "lord_of": "Third House",
-        "image": "https://divineapi.com/public/api-assets/assets/images/planets/Sun.png"
-      }
-      // ... Moon, Mercury, Venus, Mars, Jupiter, Saturn, Rahu, Ketu (same shape)
-    ],
-    "ascendant": { "/* ascendant details, sign, degree, nakshatra, etc. */": "" }
-  }
-}
-```
-
----
-
-## Code examples
-
-### cURL
+### curl
 
 ```bash
-curl -X POST "https://astroapi-3.divineapi.com/indian-api/v2/planetary-positions" \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
-  --data-urlencode "api_key=YOUR_API_KEY" \
-  --data-urlencode "full_name=Rahul Kumar" \
-  --data-urlencode "day=24" \
-  --data-urlencode "month=5" \
-  --data-urlencode "year=2023" \
-  --data-urlencode "hour=14" \
-  --data-urlencode "min=40" \
-  --data-urlencode "sec=43" \
-  --data-urlencode "gender=male" \
-  --data-urlencode "place=New Delhi" \
-  --data-urlencode "lat=28.7041" \
-  --data-urlencode "lon=77.1025" \
-  --data-urlencode "tzone=5.5"
+curl -s -X POST https://astroapi-3.divineapi.com/indian-api/v3/basic-astro-details \
+  -H "Authorization: Bearer YOUR_AUTH_TOKEN" \
+  -F api_key=YOUR_API_KEY \
+  -F full_name="Rahul Kumar" -F gender=male \
+  -F day=24 -F month=05 -F year=1990 \
+  -F hour=14 -F min=40 -F sec=0 \
+  -F place="new delhi" -F lat=28.6139 -F lon=77.2090 -F tzone=5.5
 ```
 
 ### Python (requests)
@@ -164,204 +51,238 @@ curl -X POST "https://astroapi-3.divineapi.com/indian-api/v2/planetary-positions
 ```python
 import requests
 
-url = "https://astroapi-3.divineapi.com/indian-api/v2/planetary-positions"
-
-headers = {
-    "Authorization": "Bearer YOUR_API_KEY",
-    "Content-Type": "application/x-www-form-urlencoded",
+url = "https://astroapi-3.divineapi.com/indian-api/v3/basic-astro-details"
+headers = {"Authorization": "Bearer YOUR_AUTH_TOKEN"}
+fields = {
+    "api_key": "YOUR_API_KEY",
+    "full_name": "Rahul Kumar", "gender": "male",
+    "day": "24", "month": "05", "year": "1990",
+    "hour": "14", "min": "40", "sec": "0",
+    "place": "new delhi", "lat": "28.6139", "lon": "77.2090", "tzone": "5.5",
 }
 
-payload = {
-    "api_key":   "YOUR_API_KEY",
-    "full_name": "Rahul Kumar",
-    "day":       24,
-    "month":     5,
-    "year":      2023,
-    "hour":      14,
-    "min":       40,
-    "sec":       43,
-    "gender":    "male",
-    "place":     "New Delhi",
-    "lat":       28.7041,
-    "lon":       77.1025,
-    "tzone":     5.5,
-}
-
-response = requests.post(url, headers=headers, data=payload)
-print(response.json())
-```
-
-### JavaScript (browser, fetch)
-
-```javascript
-const url = "https://astroapi-3.divineapi.com/indian-api/v2/planetary-positions";
-
-const body = new URLSearchParams({
-  api_key:   "YOUR_API_KEY",
-  full_name: "Rahul Kumar",
-  day:   24, month: 5,  year:  2023,
-  hour:  14, min:   40, sec:   43,
-  gender: "male", place: "New Delhi",
-  lat:  28.7041, lon: 77.1025, tzone: 5.5,
-});
-
-const response = await fetch(url, {
-  method: "POST",
-  headers: {
-    "Authorization": "Bearer YOUR_API_KEY",
-    "Content-Type":  "application/x-www-form-urlencoded",
-  },
-  body,
-});
-
-const data = await response.json();
-console.log(data);
+# files= sends multipart/form-data, which every DivineAPI endpoint expects
+r = requests.post(url, headers=headers, files={k: (None, v) for k, v in fields.items()}, timeout=60)
+data = r.json()
+if data.get("success") != 1:
+    raise SystemExit(data)
+print(data["data"]["moonsign"], data["data"]["nakshatra"], data["data"]["tithi"])
+# Taurus Krittika Amavasya
 ```
 
 ### Node.js (fetch, Node 18+)
 
+Save as `basic-astro.mjs` (top-level `await` needs an ES module) and run `node basic-astro.mjs`.
+
 ```javascript
-// Node.js 18+ ships with fetch built-in, no dependencies needed.
+const url = "https://astroapi-3.divineapi.com/indian-api/v3/basic-astro-details";
 
-async function getPlanetaryPositions() {
-  const url = "https://astroapi-3.divineapi.com/indian-api/v2/planetary-positions";
+const form = new FormData();
+const fields = {
+  api_key: "YOUR_API_KEY",
+  full_name: "Rahul Kumar", gender: "male",
+  day: "24", month: "05", year: "1990",
+  hour: "14", min: "40", sec: "0",
+  place: "new delhi", lat: "28.6139", lon: "77.2090", tzone: "5.5",
+};
+for (const [k, v] of Object.entries(fields)) form.append(k, v);
 
-  const body = new URLSearchParams({
-    api_key:   "YOUR_API_KEY",
-    full_name: "Rahul Kumar",
-    day:   24, month: 5,  year:  2023,
-    hour:  14, min:   40, sec:   43,
-    gender: "male", place: "New Delhi",
-    lat:  28.7041, lon: 77.1025, tzone: 5.5,
-  });
-
-  const res = await fetch(url, {
-    method: "POST",
-    headers: {
-      "Authorization": "Bearer YOUR_API_KEY",
-      "Content-Type":  "application/x-www-form-urlencoded",
-    },
-    body,
-  });
-
-  const data = await res.json();
-  console.log(data);
-}
-
-getPlanetaryPositions();
+const res = await fetch(url, {
+  method: "POST",
+  headers: { Authorization: "Bearer YOUR_AUTH_TOKEN" },
+  body: form,
+});
+const data = await res.json();
+if (data.success !== 1) throw new Error(JSON.stringify(data));
+console.log(data.data.moonsign, data.data.nakshatra, data.data.tithi);
+// Taurus Krittika Amavasya
 ```
 
-### PHP (curl)
+### PHP (cURL)
 
 ```php
 <?php
-$url = "https://astroapi-3.divineapi.com/indian-api/v2/planetary-positions";
+$url = "https://astroapi-3.divineapi.com/indian-api/v3/basic-astro-details";
 
-$payload = http_build_query([
+$fields = [
     "api_key"   => "YOUR_API_KEY",
-    "full_name" => "Rahul Kumar",
-    "day"       => 24,
-    "month"     => 5,
-    "year"      => 2023,
-    "hour"      => 14,
-    "min"       => 40,
-    "sec"       => 43,
-    "gender"    => "male",
-    "place"     => "New Delhi",
-    "lat"       => 28.7041,
-    "lon"       => 77.1025,
-    "tzone"     => 5.5,
-]);
+    "full_name" => "Rahul Kumar", "gender" => "male",
+    "day"  => "24", "month" => "05", "year" => "1990",
+    "hour" => "14", "min"   => "40", "sec"  => "0",
+    "place" => "new delhi", "lat" => "28.6139", "lon" => "77.2090", "tzone" => "5.5",
+];
 
 $ch = curl_init($url);
-curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, [
-    "Authorization: Bearer YOUR_API_KEY",
-    "Content-Type: application/x-www-form-urlencoded",
+curl_setopt_array($ch, [
+    CURLOPT_POST           => true,
+    CURLOPT_POSTFIELDS     => $fields, // an array makes cURL send multipart/form-data
+    CURLOPT_HTTPHEADER     => ["Authorization: Bearer YOUR_AUTH_TOKEN"],
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_TIMEOUT        => 60,
 ]);
-
-$response = curl_exec($ch);
+$data = json_decode(curl_exec($ch), true);
 curl_close($ch);
 
-echo $response;
+if (($data["success"] ?? 0) !== 1) {
+    exit(print_r($data, true));
+}
+echo $data["data"]["moonsign"], " ", $data["data"]["nakshatra"], " ", $data["data"]["tithi"], PHP_EOL;
 ```
 
-### Go (net/http)
+### Example response (trimmed)
 
-```go
-package main
-
-import (
-    "fmt"
-    "io"
-    "net/http"
-    "net/url"
-    "strings"
-)
-
-func main() {
-    endpoint := "https://astroapi-3.divineapi.com/indian-api/v2/planetary-positions"
-
-    form := url.Values{}
-    form.Set("api_key",   "YOUR_API_KEY")
-    form.Set("full_name", "Rahul Kumar")
-    form.Set("day",       "24")
-    form.Set("month",     "5")
-    form.Set("year",      "2023")
-    form.Set("hour",      "14")
-    form.Set("min",       "40")
-    form.Set("sec",       "43")
-    form.Set("gender",    "male")
-    form.Set("place",     "New Delhi")
-    form.Set("lat",       "28.7041")
-    form.Set("lon",       "77.1025")
-    form.Set("tzone",     "5.5")
-
-    req, _ := http.NewRequest("POST", endpoint, strings.NewReader(form.Encode()))
-    req.Header.Set("Authorization", "Bearer YOUR_API_KEY")
-    req.Header.Set("Content-Type",  "application/x-www-form-urlencoded")
-
-    resp, err := http.DefaultClient.Do(req)
-    if err != nil {
-        panic(err)
-    }
-    defer resp.Body.Close()
-
-    body, _ := io.ReadAll(resp.Body)
-    fmt.Println(string(body))
+```json
+{
+  "success": 1,
+  "data": {
+    "full_name": "Rahul Kumar",
+    "place": "new delhi",
+    "timezone": "5.5",
+    "sunrise": "1990-05-24 05:25:52",
+    "sunset": "1990-05-24 19:09:50",
+    "tithi": "Amavasya",
+    "paksha": "Krishna",
+    "sunsign": "Taurus",
+    "moonsign": "Taurus",
+    "chandramasa": "Vaishakh",
+    "nakshatra": "Krittika",
+    "vaar": "Thursday",
+    "varna": "Vaishya",
+    "yoni": "Mesha",
+    "gana": "Rakshasa",
+    "nadi": "Anta",
+    "yoga": "Atiganda",
+    "karana": "Naga",
+    "...": "..."
+  }
 }
 ```
 
----
+## Choose your repo
 
-## Other APIs by DivineAPI
+| You want to build | Open |
+|---|---|
+| Kundli (kundali) app: birth chart, dashas, doshas | [kundli-api](https://github.com/DivineAPI/kundli-api) |
+| Kundli matching (gun milan) for a matrimony or wedding app | [kundli-matching-api](https://github.com/DivineAPI/kundli-matching-api) |
+| Lal Kitab charts, teva, debts and varshphal | [lal-kitab-api](https://github.com/DivineAPI/lal-kitab-api) |
+| Hindu calendar: panchang, muhurat, choghadiya | [panchang-api](https://github.com/DivineAPI/panchang-api) |
+| Festival calendar: festival dates by month, sankranti, Tamil and Malayalam calendars | [hindu-festival-api](https://github.com/DivineAPI/hindu-festival-api) |
+| Western natal chart: planets, houses, aspects, wheel | [birth-chart-api](https://github.com/DivineAPI/birth-chart-api) |
+| Daily, weekly, monthly, yearly horoscopes in 25 languages | [horoscope-api](https://github.com/DivineAPI/horoscope-api) |
+| Tarot readings with card images | [tarot-api](https://github.com/DivineAPI/tarot-api) |
+| Numerology: core numbers, Lo Shu grid, name and mobile number | [numerology-api](https://github.com/DivineAPI/numerology-api) |
+| Typed client instead of raw HTTP | [divineapi-python](https://github.com/DivineAPI/divineapi-python) · [divineapi-node](https://github.com/DivineAPI/divineapi-node) · [divineapi-php](https://github.com/DivineAPI/divineapi-php) |
+| Astrology tools inside Claude, Cursor or another AI assistant | [mcp-indian-astrology](https://github.com/DivineAPI/mcp-indian-astrology) · [mcp-western-astrology](https://github.com/DivineAPI/mcp-western-astrology) · [mcp-horoscope-numerology](https://github.com/DivineAPI/mcp-horoscope-numerology) |
 
-[![Horoscope API](https://img.shields.io/badge/Horoscope%20API-cb22e6?style=for-the-badge&logoColor=white)](https://github.com/DivineAPI/horoscope-api)
-[![Daily Tarot](https://img.shields.io/badge/Daily%20Tarot-cb22e6?style=for-the-badge&logoColor=white)](https://github.com/DivineAPI/daily-tarot)
-[![Yes or No Tarot](https://img.shields.io/badge/Yes%20or%20No%20Tarot-cb22e6?style=for-the-badge&logoColor=white)](https://github.com/DivineAPI/yes-or-no-tarot)
-[![Fortune Cookie](https://img.shields.io/badge/Fortune%20Cookie-cb22e6?style=for-the-badge&logoColor=white)](https://github.com/DivineAPI/fortune-cookie)
-[![Coffee Cup Reading](https://img.shields.io/badge/Coffee%20Cup%20Reading-cb22e6?style=for-the-badge&logoColor=white)](https://github.com/DivineAPI/coffee-cup-reading)
+## One call per domain
 
----
+Same auth and body format everywhere. Each of these calls was run live; the repo linked in the last column has full samples and real responses.
 
-## Resources
+| Domain | Endpoint | Host | Key params | Docs | Repo |
+|---|---|---|---|---|---|
+| Vedic | `/indian-api/v3/basic-astro-details` | `astroapi-3` | birth details (13 fields) | [docs](https://developers.divineapi.com/indian-api/kundli-api/basic-astrological-details) | [kundli-api](https://github.com/DivineAPI/kundli-api) |
+| Panchang | `/indian-api/v2/find-panchang` | `astroapi-1` | `day`, `month`, `year`, `lat`, `lon`, `tzone` | [docs](https://developers.divineapi.com/indian-api/daily-panchang-api/find-panchang) | [panchang-api](https://github.com/DivineAPI/panchang-api) |
+| Western | `/western-api/v1/planetary-positions` | `astroapi-4` | birth details + `house_system` (`P` = Placidus) | [docs](https://developers.divineapi.com/western-api/natal-astrology/planetary-positions) | [birth-chart-api](https://github.com/DivineAPI/birth-chart-api) |
+| Horoscope | `/api/v5/daily-horoscope` | `astroapi-5` | `sign`, `h_day=today`, `day`, `month`, `year`, `tzone` | [docs](https://developers.divineapi.com/horoscope-and-tarot-api/daily-horoscope-prediction) | [horoscope-api](https://github.com/DivineAPI/horoscope-api) |
+| Tarot | `/api/v2/daily-tarot` | `astroapi-5` | `api_key` only | [docs](https://developers.divineapi.com/horoscope-and-tarot-api/daily-tarot) | [tarot-api](https://github.com/DivineAPI/tarot-api) |
+| Numerology | `/numerology/v1/core-numbers` | `astroapi-4` | `full_name`, `day`, `month`, `year`, `gender`, `method` | [docs](https://developers.divineapi.com/numerology-apis/core-numbers) | [numerology-api](https://github.com/DivineAPI/numerology-api) |
 
-- **Full documentation** → [developers.divineapi.com](https://developers.divineapi.com)
-- **API status** → [status.divineapi.com](https://status.divineapi.com)
-- **Postman collection** → [Run in Postman](https://documenter.getpostman.com/view/26759678/2sBXitCnDX)
-- **Changelog** → [developers.divineapi.com/changelog](https://developers.divineapi.com/changelog)
-- **Support** → [admin@divineapi.com](mailto:admin@divineapi.com)
+Hosts are `https://<host>.divineapi.com`. Use the host shown for each endpoint in the docs; endpoints are not interchangeable between hosts.
 
----
+## SDKs
 
-## License & Usage
+| Language | Install | Repo |
+|---|---|---|
+| Python | `pip install divineapi` | [divineapi-python](https://github.com/DivineAPI/divineapi-python) |
+| Node.js / TypeScript | `npm install divineapi` | [divineapi-node](https://github.com/DivineAPI/divineapi-node) |
+| PHP | `composer require divineapi/divineapi` | [divineapi-php](https://github.com/DivineAPI/divineapi-php) |
 
-Code samples on this page are free to copy into your own projects, no attribution required. Marketing copy, logos, and the **DivineAPI** name are © 2026 DivineAPI, all rights reserved.
+More in the docs: [SDKs and libraries](https://developers.divineapi.com/sdks-and-libraries).
 
-For the terms that govern the API service itself, see [divineapi.com/terms](https://divineapi.com/terms-service).
+## MCP servers
 
-## Contact
+Hosted Model Context Protocol servers (streamable HTTP). Authenticate with the `X-Divine-Api-Key` and `X-Divine-Auth-Token` headers.
 
-Questions, feature requests or partnership enquiries → **[admin@divineapi.com](mailto:admin@divineapi.com)**
+| Server | URL | Repo |
+|---|---|---|
+| Indian / Vedic astrology | `https://mcp.divineapi.com/indian/mcp` | [mcp-indian-astrology](https://github.com/DivineAPI/mcp-indian-astrology) |
+| Western astrology | `https://mcp.divineapi.com/western/mcp` | [mcp-western-astrology](https://github.com/DivineAPI/mcp-western-astrology) |
+| Horoscope, tarot and numerology | `https://mcp.divineapi.com/horoscope/mcp` | [mcp-horoscope-numerology](https://github.com/DivineAPI/mcp-horoscope-numerology) |
+
+Example for Cursor (`.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "divineapi-indian": {
+      "url": "https://mcp.divineapi.com/indian/mcp",
+      "headers": {
+        "X-Divine-Api-Key": "YOUR_API_KEY",
+        "X-Divine-Auth-Token": "YOUR_AUTH_TOKEN"
+      }
+    }
+  }
+}
+```
+
+Setup for Claude Desktop and VS Code: [developers.divineapi.com/mcp](https://developers.divineapi.com/mcp).
+
+## Languages
+
+Set the language with the `lan` form field (default `en`). DivineAPI uses its own language codes, not ISO 639-1: send `ma` for Marathi, `tm` for Tamil and `tl` for Telugu (the ISO codes `mr` and `te` are rejected, and `ta` means Filipino, not Tamil).
+
+| Product | Languages | Codes |
+|---|---|---|
+| Vedic | 8 Indian languages | `en` English, `hi` Hindi, `bn` Bengali, `ma` Marathi, `tm` Tamil, `tl` Telugu, `ml` Malayalam, `kn` Kannada |
+| Western (text reports) | 12 | `en`, `hi`, `ja`, `ru`, `pt`, `es`, `fr`, `de`, `it`, `nl`, `pl`, `tr` |
+| Horoscope and tarot | 25, through the translator host `astroapi-5-translator.divineapi.com` | `en`, `hi`, `zh`, `ja`, `ar`, `ru`, `pt`, `es`, `fr`, `de`, `it`, `nl`, `pl`, `tr`, `uk`, `hu`, `gr` Greek, `bn`, `ma`, `tm`, `tl`, `ml`, `kn`, `ta` Filipino, `bah` Indonesian |
+| Numerology | English only | `en` |
+
+Translator replies can take 25 to 35 seconds, so set your HTTP timeout to at least 60 seconds for those calls.
+
+## Gotchas
+
+- **Check the body, not only the status.** Hosts `astroapi-1` to `astroapi-5` return HTTP 200 even on errors: `success: 1` is OK, `2` is a validation error, `3` is an auth error (`{"success":3,"msg":"Invalid authorization token!"}`). Hosts `astroapi-7`, `astroapi-8` and `pdf` return real 4xx codes with `status: "error"` and an `error_code`.
+- **`tzone` is a decimal offset** (`5.5` for India, `-4` for New York in summer), not `+5:30` and not a zone name. It is not adjusted for daylight saving, so send the offset that applied at the birth moment.
+- **`sec` is required** on birth endpoints. Send `0` if the second is unknown.
+- **`place` in lowercase** (`new delhi`). `lat` and `lon` drive the calculation.
+- **Dates are three fields**: `day`, `month`, `year`.
+- **Horoscope periods are keywords**: `h_day=today|tomorrow|yesterday`, and `current|prev|next` for week, month and year.
+
+## Which plan includes this
+
+Each product has its own plans on divineapi.com: **Vedic** (Vedic Sampoorna, Vedic Ananta, Vedic Prakash), **Western** (Western Nova, Western Atlas, Western Lumen), **Horoscope** (Horoscope Starter, Horoscope Pro), **Tarot** (Tarot Basic, Tarot Essentials, Tarot Gold) and **Numerology** (Numerology API), plus single-tool plans and white-label PDF reports. Compare what each plan includes at [divineapi.com/pricing](https://divineapi.com/pricing).
+
+## FAQ
+
+**Is there a free trial?**
+Yes, a 14-day free trial (credit card required to activate the trial): [divineapi.com/start-trial](https://divineapi.com/start-trial). Plans and prices are at [divineapi.com/pricing](https://divineapi.com/pricing).
+
+**Which ayanamsa do the Vedic endpoints use?**
+Lahiri, fixed. Western endpoints are tropical.
+
+**Which house systems are available for Western charts?**
+25 house systems through the `house_system` field; Placidus (`P`) is the default.
+
+**Can I get the chart as an image?**
+Yes, as SVG and base64. Western has a natal wheel chart endpoint and Vedic has divisional chart endpoints (D1, D9, D10 and more, north or south style); see the [Western](https://developers.divineapi.com/western-api) and [Indian](https://developers.divineapi.com/indian-api) docs.
+
+**Can I generate branded PDF reports?**
+Yes, 125+ white-label PDF report types with your company name, logo and footer. See [real samples](https://reports.divineapi.com/reports) and the [PDF Report API docs](https://developers.divineapi.com/pdf-report-api).
+
+**Is there a Postman collection or OpenAPI spec?**
+Postman: [documenter.getpostman.com/view/26759678/2sBYAysU8Y](https://documenter.getpostman.com/view/26759678/2sBYAysU8Y). OpenAPI and the full reference: [developers.divineapi.com](https://developers.divineapi.com).
+
+## Support
+
+- Docs: [developers.divineapi.com](https://developers.divineapi.com)
+- Changelog: [developers.divineapi.com/changelog](https://developers.divineapi.com/changelog)
+- Status: [status.divineapi.com](https://status.divineapi.com)
+- Help center: [support.divineapi.com](https://support.divineapi.com)
+- Website: [divineapi.com](https://divineapi.com)
+
+Terms of the API service: [divineapi.com/terms-service](https://divineapi.com/terms-service).
+
+## License
+
+Code samples in this repository are released under the MIT License (see [LICENSE](LICENSE)). The DivineAPI name and logo are trademarks of DivineAPI.
