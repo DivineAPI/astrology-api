@@ -9,6 +9,7 @@
 [![Postman](https://img.shields.io/badge/Postman-collection-FF6C37)](https://documenter.getpostman.com/view/26759678/2sBYAysU8Y)
 [![Status](https://img.shields.io/badge/Status-status.divineapi.com-10B981)](https://status.divineapi.com)
 [![MCP](https://img.shields.io/badge/MCP-hosted%20servers-6B7280)](https://divineapi.com/mcp)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/DivineAPI/astrology-api)
 
 Verified live against the DivineAPI API on 2 October 2026.
 
